@@ -16,7 +16,7 @@ with open(sys.argv[1]) as f:
             print("{:d}*2".format(num // 2))
             continue
 
-        for q in range(3, sqrt(num) + 1, 2):
+        for q in range(3, sqrt(num) + 1):
             if num % q == 0:
                 p = num // q
                 print("{:d}*{:d}".format(p, q))
